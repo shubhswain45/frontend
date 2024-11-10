@@ -6,7 +6,7 @@ export default function Home() {
 
   const setCookie = async () => {
     try {
-      const res = await fetch('http://localhost:4000/set-cookie', {
+      const res = await fetch('https://backend-y4p6.onrender.com/set-cookie', {
         method: 'GET',
         credentials: 'include', // To include cookies in the request
       });
@@ -20,7 +20,7 @@ export default function Home() {
 
   const getCookie = async () => {
     try {
-      const res = await fetch('http://localhost:4000/get-cookie', {
+      const res = await fetch('https://backend-y4p6.onrender.com/get-cookie', {
         method: 'GET',
         credentials: 'include', // To include cookies in the request
       });
